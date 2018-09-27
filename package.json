@@ -4,10 +4,12 @@
   "description": "Video player based off Youtube. Uses the Youtube Data v3 API. Built with React and a boilerplate from Modern React with Redux",
   "main": "index.js",
   "repository": "git@github.com:RaevLogic/YT-Video-Player.git",
+  "homepage": "https://raevlogic.github.io/YT-Video-Player",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "deploy": "gh-pages -d build"
   },
   "author": "Roger Keith",
   "license": "ISC",
@@ -21,6 +23,7 @@
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
+    "gh-pages": "^2.0.0",
     "lodash": "^4.17.11",
     "react": "16.3.2",
     "react-dom": "16.3.2",
